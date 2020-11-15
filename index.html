@@ -17,9 +17,10 @@
             <a-image id="image-asset" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/logue_bpl_newspaper_1_Page_4.jpg"></a-image>
         </a-assets>
         
-        <a-marker id="animated-marker" type='barcode' value='6'>
+        <a-marker type='barcode' value='6'>
             <a-entity
-                animation-mixer
+                rotation="0 0 0" 
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                 gltf-model="#legobrick"
                 scale="1 1 1"">
             </a-entity>
@@ -33,11 +34,10 @@
             <a-image position="0 0.5 0" height="19.68" width="13.4"rotation="-90 0 0" src="#image-asset"></a-image>
         </a-marker>
         
-        <a-marker id="animated-marker" type='barcode' value='10'>
+        <a-marker type='barcode' value='9'>
             <a-entity
-                animation-mixer
                 gltf-model="#cambridge"
-                scale=".5 .5 .5"">
+                scale=".02 .02 .02"">
             </a-entity>
         </a-marker>
 
