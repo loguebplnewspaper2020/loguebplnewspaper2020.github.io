@@ -40,10 +40,9 @@
         <a-marker type='barcode' value='6'>
             <a-entity
                 rotation="0 0 0" 
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000"
                 gltf-model="#legobrick"
-                modify-materials
-                scale="1 1 1"">
+                modify-materials>
             </a-entity>
         </a-marker>
         
@@ -51,7 +50,7 @@
             <a-box 
             	position='0 0.5 0'
             	rotation="0 0 0"
-            	animation="property: rotation; to: 0 0 360; dur: 2000; easing: linear; loop: true"
+            	animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true"
             	color="yellow">
             </a-box>
         </a-marker>
