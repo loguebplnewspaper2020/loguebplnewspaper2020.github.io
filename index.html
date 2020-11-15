@@ -19,7 +19,7 @@
         				// Go over the submeshes and modify materials we want.
         				obj.traverse(node => {
           					if (node.name.indexOf('ship') !== -1) {
-            					node.material.color.set('red');
+            					node.material.color.set('tomato');
           					}
         				});
       				});
@@ -68,7 +68,7 @@
         <a-marker type='barcode' value='9'>
             <a-entity
                 gltf-model="#cambridge"
-                scale="0.001 0.001 0.001"">
+                scale="0.008 0.008 0.008"">
             </a-entity>
         </a-marker>
         
