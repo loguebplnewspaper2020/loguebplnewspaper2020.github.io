@@ -35,6 +35,7 @@
             <a-asset-item id="legobrick" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/legobrick.gltf"></a-asset-item>
             <a-asset-item id="cambridge" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/CAMBRIDGE_MODEL.gltf"></a-asset-item>
             <a-image id="image-asset" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/001.jpg"></a-image>
+            <a-asset-item id="liberty" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/statueliberty.gltf"></a-asset-item>
         </a-assets>
         
         <a-marker type='barcode' value='8'>
@@ -46,13 +47,22 @@
             </a-entity>
         </a-marker>
         
-        <a-marker type='barcode' value='7'>
+       <!--  <a-marker type='barcode' value='7'>
             <a-box 
             	position='0 0.5 0'
             	rotation="0 0 0"
             	animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true"
             	color="yellow">
             </a-box>
+        </a-marker> -->
+        
+        <a-marker type='barcode' value='7'>
+            <a-entity 
+            	position='0 0 0'
+            	rotation="0 0 0"
+            	animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true"
+            	gltf-model="#liberty";
+            </a-entity>
         </a-marker>
         
         <a-marker type='barcode' value='6'>
