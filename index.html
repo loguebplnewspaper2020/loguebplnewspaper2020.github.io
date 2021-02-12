@@ -32,12 +32,13 @@
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
         <a-assets>
-            <a-asset-item id="legobrick" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/legobrick.gltf"></a-asset-item>
+            <!--><a-asset-item id="legobrick" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/legobrick.gltf"></a-asset-item>
             <a-asset-item id="cambridge" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/CAMBRIDGE_MODEL.gltf"></a-asset-item>
             <a-image id="image-asset" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/001.jpg"></a-image>
-            <a-asset-item id="liberty" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/statueliberty.gltf"></a-asset-item>
-            <a-asset-item id="newsobj" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/bplarobject.glb"></a-asset-item>
-            <a-asset-item id="carobj" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/bplsurface1.glb"></a-asset-item>
+            <a-asset-item id="liberty" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/statueliberty.gltf"></a-asset-item>-->
+            
+            <a-asset-item id="car_obj" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/page_1_obj.glb"></a-asset-item>
+            <a-asset-item id="news_obj" src="https://raw.githubusercontent.com/loguebplnewspaper2020/loguebplnewspaper2020.github.io/master/page_4_obj.glb"></a-asset-item>
         </a-assets>
         
         
@@ -46,8 +47,8 @@
            		position="0 0 0" 
             	rotation="0 0 0"
             	animation="property: rotation; to: 0 360 0; dur: 20000; easing: linear; loop: true"
-            	gltf-model="#carobj"
-            	scale="1 1 1"> 
+            	gltf-model="#car_obj"
+            	scale="2 2 2"> 
             </a-entity>
         </a-marker>
         
@@ -56,7 +57,7 @@
            		position="0 0 0" 
             	rotation="0 0 0"
             	animation="property: rotation; to: 0 360 0; dur: 20000; easing: linear; loop: true"
-            	gltf-model="#newsobj"
+            	gltf-model="#news_obj"
             	scale="12 12 12"> 
             </a-entity>
         </a-marker>
